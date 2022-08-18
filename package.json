@@ -7,8 +7,10 @@
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
     "express": "^4.18.1",
     "graphql": "^16.6.0",
+    "jsonwebtoken": "^8.5.1",
     "mongodb": "^4.8.1",
     "mongoose": "^6.5.2",
     "node.js": "^0.0.1-security",
@@ -40,5 +42,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
   }
 }
