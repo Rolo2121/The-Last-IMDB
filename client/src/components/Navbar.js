@@ -1,5 +1,20 @@
 import React from 'react';
-import { Menu } from 'antd';
+import '../index.css';
+import '../index.css';
+import {
+	PageHeader,
+	Breadcrumb,
+	Layout,
+	Menu,
+	Col,
+	Row,
+	TimePicker,
+	Form,
+	Input,
+	Button,
+	Space,
+	Card,
+} from 'antd';
 
 const Navbar = () => {
 	return (
@@ -14,22 +29,19 @@ const Navbar = () => {
 				aria-label="Toggle navigation">
 				<span className="navbar-toggler-icon"></span>
 			</button>
-			<a className="logo" href="#">
+			<a className="App-logo" href="#logo">
 				The-Last-imdb
 			</a>
+			<button className="App-link" type="link" shape="round" size="large">
+				Watch List
+			</button>
 
-			<Menu
-				theme="dark"
-				mode="horizontal"
-				defaultSelectedKeys={['2']}
-				items={new Array(3).fill(null).map((_, index) => {
-					const key = index + 1;
-					return {
-						key,
-						label: `nav ${key}`,
-					};
-				})}
-			/>
+			<button className="App-link" type="link" shape="round" size="small">
+				Liked
+			</button>
+			<button className="App-link" type="link" shape="round" size="large">
+				Favorites
+			</button>
 		</nav>
 	);
 };

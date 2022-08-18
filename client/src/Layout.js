@@ -17,7 +17,7 @@ import {
 	Card,
 } from 'antd';
 
-const { Header, Content, Footer } = Layout;
+const { Content, Footer } = Layout;
 const temp = [1, 2, 3, 4];
 const App = () => {
 	const [form] = Form.useForm();
