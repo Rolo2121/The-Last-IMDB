@@ -1,6 +1,6 @@
 import { Avatar, Button, Comment, Form, Input, List } from 'antd';
 import moment from 'moment';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { DislikeFilled, DislikeOutlined, LikeFilled, LikeOutlined, DeleteOutlined } from '@ant-design/icons';
 const { TextArea } = Input;
 
@@ -77,7 +77,10 @@ const App = () => {
   const [comments, setComments] = useState([]);
   const [submitting, setSubmitting] = useState(false);
   const [value, setValue] = useState('');
-
+  useEffect(() => {
+    console.log(comments)
+    //load comments
+  }, [])
 
   const handleSubmit = () => {
     if (!value) return;
@@ -85,6 +88,7 @@ const App = () => {
     setTimeout(() => {
       setSubmitting(false);
       setValue('');
+      //insert comment to db
       setComments([
         ...comments,
         {

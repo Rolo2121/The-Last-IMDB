@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { PlusOutlined } from '@ant-design/icons';
 import Nav from './Nav'
 import "../index.css";
+import { useNavigate } from 'react-router-dom';
 
 import {
 
@@ -26,11 +27,13 @@ const App = () => {
   const [fileList, setFileList] = useState([])
   const [componentDisabled, setComponentDisabled] = useState(false);
   const onFinish = (values) => {
+    navigate('/')
     console.log(values);
   };
   const onFormLayoutChange = ({ disabled }) => {
    /* setComponentDisabled(disabled);
   };*/}
+  const navigate = useNavigate()
 
   return (
     <>
@@ -64,6 +67,9 @@ const App = () => {
           <Button htmlType="submit">Login</Button>
         </Form.Item>
       </Form>
+      <Button type='link' onClick={() => {
+        navigate('/createaccount')
+      }}>Don't have an account register here</Button>
     </>
   );
 };

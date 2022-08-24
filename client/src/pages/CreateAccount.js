@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { PlusOutlined } from '@ant-design/icons';
 import Nav from './Nav'
 import "../index.css";
+import { useNavigate } from 'react-router-dom';
 import {
   Form,
   Input,
@@ -19,16 +20,19 @@ import {
 const { RangePicker } = DatePicker;
 const { TextArea } = Input;
 
+
 const App = () => {
   const [form] = Form.useForm();
   const [fileList, setFileList] = useState([])
   const [componentDisabled, setComponentDisabled] = useState(false);
   const onFinish = (values) => {
+    navigate('/')
     console.log(values);
   };
   const onFormLayoutChange = ({ disabled }) => {
    /* setComponentDisabled(disabled);
   };*/}
+  const navigate = useNavigate();
 
   return (
     <>
@@ -59,7 +63,7 @@ const App = () => {
         </Form.Item>
 
 
-        <Form.Item label="Profile Pic" valuePropName="fileList">
+       {/* <Form.Item label="Profile Pic" valuePropName="fileList">
           <Upload fileList={fileList}
           onChange={({fileList:fl})=>{
             setFileList(fl)
@@ -79,11 +83,14 @@ const App = () => {
               </div>
             </div>
           </Upload>
-        </Form.Item>
+              </Form.Item> */}
         <Form.Item label="Submit">
-          <Button htmlType="submit">Submit</Button>
+          <Button htmlType="submit" >Submit</Button>
         </Form.Item>
       </Form>
+      <Button type='link' onClick={() => {
+        navigate('/login')
+      }}>Already have an account login here</Button>
     </>
   );
 };
