@@ -1,4 +1,4 @@
-# Not Another IMDB
+# The Last IMDB
 
 The Last IMDB is the only tool you will need to find the perfect movie!
 
