@@ -44,7 +44,7 @@ Frontend team members:
 
 ## Technology
 
-
+ant design, axios, bcrypt, express, graphql, mongodb, mongo-sanitize, mongoose, node.js, react, react-dom, react-router-dom, react-scripts, jsonwebtoken
 
 ## License
 
