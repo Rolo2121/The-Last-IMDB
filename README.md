@@ -26,7 +26,7 @@ To be announced
 
 ## Usage
 
-# Comming Soon!
+# Coming Soon!
 
 ## Credits
 
