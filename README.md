@@ -52,5 +52,4 @@ ant design, axios, bcrypt, express, graphql, mongodb, mongo-sanitize, mongoose, 
 
 ## Project Status and future versions
 
-Future versions will have the ability to create a watch list and will be able to
-categorize movies based on your personal preferences.
+Future versions will have the ability to rate each movie you have seen, order movies into a to watch heirarchy, and share and compare your ratings with friends!  
